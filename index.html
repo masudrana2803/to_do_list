@@ -6,6 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily To-Do List</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Our daily tasks list</h1>
+            <div class="counter">
+                <span id="doneCounter">0</span>/<span id="totalCounter">0</span>
+            </div>
+            <p id="errorMessage" class="error-message"></p>
+        </div>
+
+        <!-- Input Section -->
+        <div class="add-task-wrapper">
+            <input type="text" id="taskInput" placeholder="Write something please!">
+            <button id="addButton">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+        <!-- To-Do List Section -->
+        <div id="todoListContainer">
+            <!-- To-Do items will be dynamically added here -->
+        </div>
+
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
 </body>
 </html>

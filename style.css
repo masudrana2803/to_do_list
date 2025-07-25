@@ -1,0 +1,147 @@
+/* --- General Styling & Body --- */
+body {
+    font-family: 'Inter', sans-serif; /* A fallback, best to import from Google Fonts in HTML */
+    background-color: #00FFFF; /* Bright cyan background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* --- Main Container --- */
+.main-container {
+    width: 100%;
+    max-width: 450px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Header Section --- */
+.header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.header h1 {
+    font-size: 1.875rem; /* 30px */
+    font-weight: 700;
+    color: #1f2937; /* Dark gray */
+    margin: 0;
+}
+
+.counter {
+    margin-top: 0.5rem;
+    font-size: 1.25rem; /* 20px */
+    font-weight: 600;
+    color: #374151; /* Medium gray */
+}
+
+.error-message {
+    color: #ef4444; /* Red */
+    font-weight: 500;
+    margin-top: 0.5rem;
+    height: 1.25rem; /* 20px */
+}
+
+/* --- Input Section --- */
+.add-task-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 2px solid #d1d5db; /* Light gray border */
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #06b6d4; /* Cyan */
+    box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.3);
+}
+
+#addButton {
+    flex-shrink: 0;
+    background-color: #06b6d4; /* Cyan */
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.25rem;
+}
+
+#addButton:hover {
+    background-color: #0891b2; /* Darker cyan */
+}
+
+/* --- To-Do List Section --- */
+#todoListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.single-todo-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.single-todo-item input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #1f2937;
+}
+
+.single-todo-item input[type="text"]:focus {
+    outline: none;
+}
+
+.single-todo-item input[type="text"]:disabled {
+    color: #374151;
+}
+
+/* --- Action Buttons (Edit, Delete, Done) --- */
+.single-todo-item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.single-todo-item .edit-button { color: #3b82f6; /* Blue */ }
+.single-todo-item .edit-button:hover { color: #2563eb; }
+
+.single-todo-item .delete-button { color: #ef4444; /* Red */ }
+.single-todo-item .delete-button:hover { color: #dc2626; }
+
+.single-todo-item .done-button { color: #22c55e; /* Green */ }
+.single-todo-item .done-button:hover { color: #16a34a; }
+
+/* --- Completed Task Styling --- */
+.completed-task input[type="text"] {
+    text-decoration: line-through;
+    color: #6b7280; /* Gray */
+}
