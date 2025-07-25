@@ -11,7 +11,12 @@ body {
     padding: 1rem;
     box-sizing: border-box;
 }
-
+img{
+    width:100%;
+    vertical-align:center;
+    background-repeat:no-repeat;
+    
+}
 /* --- Main Container --- */
 .main-container {
     width: 100%;
