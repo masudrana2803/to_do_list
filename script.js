@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Initial State ---
     // Pre-populate the list with a couple of example tasks
-    createTodoItem("Buy groceries");
-    createTodoItem("Finish project report");
+    // createTodoItem("Buy groceries");
+    // createTodoItem("Finish project report");
     updateCounters();
 
 });
