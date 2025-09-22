@@ -2,7 +2,7 @@
 body {
     font-family: 'Inter', sans-serif; /* A fallback, best to import from Google Fonts in HTML */
     background-color: #00FFFF; /* Bright cyan background */
-    background-image: url(https://media.tenor.com/QGwIRcsQhyAAAAAM/forest-calm-forest.gif);
+    background-image: url(../To-Do-List/forest-calm-forest.gif);
     display: flex;
     align-items: center;
     justify-content: center;
